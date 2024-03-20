@@ -1,0 +1,113 @@
+body{
+    font-family: "Arimo", sans-serif;
+}
+main{
+    width: 100%;
+}
+.header__bg-photo{
+    background-image: url(img/rivne-1.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+}
+nav{
+    height: 100%;   
+    position: relative; 
+}
+.menu-top{
+    display: flex;
+    justify-content: right;
+    padding: 50px 50px 0 0;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+li{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    list-style: none;
+    
+    
+}
+a{
+    background-color: rgb(140, 140, 140);
+    border-bottom: .1rem solid rgb(255, 255, 255);
+    padding: .7rem;
+    margin: 3px;
+}
+.header__text{
+    width: 25%;
+    position: absolute;
+    top: 7rem;
+    right:34rem;
+    color: rgb(85, 3, 3);
+    font-weight: 600;
+}
+
+h1{
+    margin: 0;
+}
+
+.section__text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -----медіа-запити для iPad, планшети (ориентація екрана Portrait та Landscape) ----------- */
+
+  @media only screen
+  and (min-device-width: 480px)
+  and (max-device-width: 1024px)
+  { 
+    .header__text{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+    }
+    .items__rivne img {
+        max-width: 400px;
+        padding: 0 0 0 0;
+        flex-flow: column;
+      }
+      .items__photo{
+          flex-flow: column;
+          align-items: center;
+      }
+  }
+/* ----------------------------*/
+
+/* photogalery */
+.items{
+    display: flex;
+    justify-content: center;
+}
+.items__photo{ /*контейнер фото*/
+    display: flex;
+    justify-content: center;
+    width:70% ;
+    gap: 5px;
+}
+
+.items__rivne img{
+    padding: 0 0 1vh 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+}
+.footer__text{
+    width: 90%;
+    height: 10rem;
+    text-align: center;
+}

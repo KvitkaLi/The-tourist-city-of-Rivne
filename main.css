@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.items__photo{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.items__rivne img{
+    
+    object-fit: cover;
+    object-position: center;  
+    justify-content: center;
+}
+@media screen and (max-width: 1024px){
+    .items{
+        align-items: center;
+    }
+    .items__rivne img { 
+        max-width: 500px;
+        padding: 0 0 0 0;
+      }
+      .items__photo{
+          flex-flow: column;
+      }
+}
+@media screen and (max-width: 780px){
+    .items__rivne img { 
+        max-width: 300px;
+        padding: 0 0 0 0;
+        justify-content: center;
+      }
+      .items__photo{
+          flex-flow: column;
+      }
+}
